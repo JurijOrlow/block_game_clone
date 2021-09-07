@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Block Game</string>
+    <string name="puzzle_block_game">Puzzle Block Game</string>
+    <string name="name_input">Gra stworzona przez JurijOrlow oraz pekadee</string>
+    <string name="welcome">Witaj</string>
+    <string name="name_hint">Imię</string>
+    <string name="zagraj">Zagraj!</string>
+    <string name="points">Twoje punkty</string>
+    <string name="wylosuj_ponownie">Wylosuj ponownie</string>
+</resources>

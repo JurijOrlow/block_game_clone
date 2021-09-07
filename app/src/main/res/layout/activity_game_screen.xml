@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_wall"
+    tools:context=".GameScreenActivity"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+
+
+        android:background="@android:color/white"
+        app:cardCornerRadius="9dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:id="@+id/licznikPunktów"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/puchar"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/points"
+                android:gravity="left"
+                app:srcCompat="@drawable/points" />
+
+            <TextView
+                android:id="@+id/points"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/points"
+                android:textColor="#757575"
+                android:textSize="15sp"
+                android:textStyle="" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/row_width"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/one_row"
+                android:layout_width="@dimen/row_width"
+                android:layout_height="@dimen/empty_size"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/sq11"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq12"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq13"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq14"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq15"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq16"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/two_row"
+                android:layout_width="@dimen/row_width"
+                android:layout_height="@dimen/empty_size">
+
+                <ImageView
+                    android:id="@+id/sq21"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq22"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq23"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq24"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq25"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq26"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/three_row"
+                android:layout_width="@dimen/row_width"
+                android:layout_height="@dimen/empty_size">
+
+                <ImageView
+                    android:id="@+id/sq31"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq32"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq33"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq34"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq35"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq36"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/four_row"
+                android:layout_width="@dimen/row_width"
+                android:layout_height="@dimen/empty_size">
+
+                <ImageView
+                    android:id="@+id/sq41"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq42"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq43"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq44"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq45"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq46"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/five_row"
+                android:layout_width="@dimen/row_width"
+                android:layout_height="@dimen/empty_size">
+
+                <ImageView
+                    android:id="@+id/sq51"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq52"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq53"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq54"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq55"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq56"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/six_row"
+                android:layout_width="@dimen/row_width"
+                android:layout_height="@dimen/empty_size">
+
+                <ImageView
+                    android:id="@+id/sq61"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq62"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq63"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq64"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq65"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+
+                <ImageView
+                    android:id="@+id/sq66"
+                    android:layout_width="@dimen/empty_size"
+                    android:layout_height="@dimen/empty_size"
+                    app:srcCompat="@drawable/empty_block" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/rolled_1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="@dimen/bot_margin_rolled"
+            android:layout_toStartOf="@+id/rolled_2"
+            android:src="@drawable/block_3x3" />
+
+        <ImageView
+            android:id="@+id/rolled_2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/bot_margin_rolled"
+            android:src="@drawable/block_3x3" />
+
+        <ImageView
+            android:id="@+id/rolled_3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="@dimen/bot_margin_rolled"
+            android:layout_toEndOf="@+id/rolled_2"
+            android:src="@drawable/block_3x3" />
+    </RelativeLayout>
+    <!--<TextView
+        android:id="@+id/temp_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>-->
+
+
+    <Button
+        android:id="@+id/reroll_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:text="@string/wylosuj_ponownie"
+        android:textColor="@color/white"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="15sp" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
